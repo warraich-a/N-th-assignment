@@ -1,0 +1,19 @@
+<router-outlet></router-outlet>
+<h1>Below You can the history of requested numbers</h1>
+<table class="table table-striped table-responsive-lg">
+    <thead>
+        <tr>
+            <th>Last Number </th>
+            <th>Time</th>
+        </tr>
+    </thead>
+    <tbody>
+
+      <tr id="test" 
+      *ngFor="let h of history">
+        <td>{{h.FibonacciNumber}}</td>
+        <td>{{h.time}}</td>
+      </tr>
+      
+    </tbody>
+</table>

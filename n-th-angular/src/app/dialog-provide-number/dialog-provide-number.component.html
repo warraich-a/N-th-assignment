@@ -1,0 +1,35 @@
+<div class="container">
+    <form 
+    class="text-center"
+    #provideNumber="ngForm"
+    (ngSubmit)="onSubmitNumber(provideNumber.value)">
+    <h1>Add Number</h1>
+    <div class="row">
+        <div class="col">
+              <h3>Basic Information</h3>
+              <mat-form-field   
+                    class="input-full-width">
+                    <input matInput type="text" 
+                    name="num" 
+                    ngModel 
+                    placeholder="First Name"> 
+              </mat-form-field>
+          <button 
+                    mdbBtn 
+                    type="submit"  
+                    rounded="true" 
+                    class="btn btn-success"
+                    id="submitButton" > 
+                    submit
+            </button>
+            <button 
+                    type="button" 
+                    class="btn btn-danger" 
+                    (click)="CloseDialog()">
+                    Close
+            </button>  
+            </div>
+        </div>
+    </form>
+    
+    </div>
